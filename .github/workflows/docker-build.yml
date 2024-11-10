@@ -34,4 +34,4 @@ jobs:
         platforms: linux/amd64,linux/arm64
         tags: ghcr.io/${{ env.owner }}/ebusd-custom:latest
         cache-from: type=registry,ref=ghcr.io/${{ env.owner }}/ebusd-custom:latest
-        cache-to: type=registry,ref=ghcr.io/${{ env.owner | toLower }}/ebusd-custom:latest,mode=max
+        cache-to: type=registry,ref=ghcr.io/${{ env.owner }}/ebusd-custom:latest,mode=max
