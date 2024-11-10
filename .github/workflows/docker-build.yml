@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
       
@@ -33,7 +30,6 @@ jobs:
     - name: Build and Push Multi-Platform Docker Image
       uses: docker/build-push-action@v6
       with:
-        context: .
         push: true
         platforms: linux/amd64,linux/arm64
         tags: ghcr.io/${{ env.owner }}/ebusd-custom:latest
