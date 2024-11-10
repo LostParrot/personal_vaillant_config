@@ -13,3 +13,5 @@ ENV EBUSD_MQTTPORT=1883
 ENV EBUSD_MQTTHOST=192.168.99.2
 ENV EBUSD_MQTTINT="/etc/ebusd/mqtt-hassio.cfg"
 ENV EBUSD_MQTTJSON=""
+ENV EBUSD_LOG="all:error"
+ENV EBUSD_MQTTVAR="filter-direction = r|u|^w"
