@@ -32,3 +32,6 @@ jobs:
         push: true
         platforms: linux/amd64,linux/arm64
         tags: ghcr.io/${{ env.owner }}/ebusd-custom:latest
+        build-args: |
+          MQTT_USER=${{ secrets.MQTT_USER }}
+          MQTT_PASS=${{ secrets.MQTT_PASS }}
